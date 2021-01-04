@@ -2,6 +2,7 @@
 </br>
 This repo automates sending of Whatapp messages
 </br>
+</br>
 <img src="Screenshot (232).png"/>
 
 # Dependencies:
