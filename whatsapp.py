@@ -4,13 +4,13 @@ from tkinter import messagebox
 import time
 
 root = Tk()
-root.title("WHATSUP") 
+root.title("WHATSAPP") 
 
 root.geometry('405x350')
 root.configure(bg='#2B547E')
 root.resizable(width=0, height=0)
 
-label=Label(root, text="Whatsup Automation",font="bold" ,width=40, fg="white", bg="black",padx=10, pady=13)
+label=Label(root, text="Whatsapp Automation",font="bold" ,width=40, fg="white", bg="black",padx=10, pady=13)
 label.grid(row=0,columnspan=3, padx=10, pady=10)
 label.place(x = 10,
           y = 10)
