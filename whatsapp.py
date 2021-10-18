@@ -2,6 +2,7 @@ from tkinter import *
 import pywhatkit
 from tkinter import messagebox
 import time
+import threading
 
 root = Tk()
 root.title("WHATSAPP")
@@ -44,6 +45,10 @@ def whatsup():
       pywhatkit.sendwhatmsg(number, message, time, time2)
    except:
       messagebox.showerror("error", "Please fill the details")
+      
+def whatsupthreaded():
+    mythreads = threading.Thread(target=whatsup)
+    mythreads.start()
 
 #Second Entry and label
 
@@ -96,7 +101,7 @@ entry4.place(x=150,
              y=280)
 
 send = Button(root, font="30", width=40, text="Send",
-              fg="green", bg="black", command=whatsup)
+              fg="green", bg="black", command=whatsupthreaded)
 send.grid(row=3, column=1, padx=10, pady=10)
 send.place(x=15,
            y=310)
