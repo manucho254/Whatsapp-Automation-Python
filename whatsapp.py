@@ -35,7 +35,6 @@ entry1.place(x=10,
 
 #main function
 
-
 def whatsup():
    try:
       number = entry1.get()
@@ -51,7 +50,6 @@ def whatsupthreaded():
     mythreads.start()
 
 #Second Entry and label
-
 
 label = Label(root, text="Message", font=20, fg="white", bg="black")
 label.grid(row=1, padx=10, pady=10)
@@ -72,19 +70,16 @@ label.grid(row=1, padx=10, pady=10)
 label.place(x=10,
             y=240)
 
-
 label4 = Label(root, font=20, fg="white", bg="black")
 label4.grid(row=1, padx=10, pady=10)
 label4.place(x=220,
              y=240)
-
 
 def localtime():
    t = time.localtime()
    current_time = time.strftime("%H:%M:%S", t)
    label4.config(text="Localtime:"+current_time)
    label4.after(200, localtime)
-
 
 localtime()
 
